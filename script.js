@@ -1,5 +1,8 @@
 console.log('new script loaded ')
 var cartShippingOption = function (){
+    if(location.pathname !== '/cart'){
+        return false
+    }
     // main Delivery Select options
     var template = `
     <div id='hyperDeliverContainer'>
@@ -84,10 +87,10 @@ var cartShippingOption = function (){
             var standerdDiv = document.getElementById('standerdDelivery')
            
 
-            console.log(this.value);
+            //console.log(this.value);
             var deliveryType = this.value 
            if(deliveryType === 'Store Pickup'){
-              console.log("I am store pickup div")
+              //console.log("I am store pickup div")
               if(localDiv ){
                 hyperMain.removeChild(localDiv)
               }
@@ -98,7 +101,7 @@ var cartShippingOption = function (){
               hyperMain.appendChild(storePickupDiv)
            }
            if(deliveryType === 'Local Delivery'){
-            console.log("I am Local Delivery div")
+            //console.log("I am Local Delivery div")
             if(storeDiv){
                 hyperMain.removeChild(storeDiv)
             }
@@ -109,7 +112,7 @@ var cartShippingOption = function (){
              hyperMain.appendChild(localDeliveryDiv)
            }
            if(deliveryType === 'Standard delivery'){
-            console.log("I am Standard delivery div")
+            //console.log("I am Standard delivery div")
             if(storeDiv) {
                 hyperMain.removeChild(storeDiv)
             }
@@ -126,7 +129,7 @@ var cartShippingOption = function (){
     document.querySelector('body #hyperDeliverContainer').addEventListener('change', function(event) {
         if (event.target.id.toLowerCase() === 'zipcode') {
           // do your action on your Zipcode validation
-          console.log(event.target.value)
+          //console.log(event.target.value)
           var ziperr = document.getElementById('zipcode-error')
           
           var zipval = event.target.value
