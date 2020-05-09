@@ -1,3 +1,4 @@
+console.log('new script loaded ')
 var cartShippingOption = function (){
     // main Delivery Select options
     var template = `
