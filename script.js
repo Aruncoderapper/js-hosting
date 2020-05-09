@@ -157,6 +157,7 @@ var cartShippingOption = function (){
       });
 }
 window.addEventListener("load", function() {
+    console.log('window loaded')
     cartShippingOption();
     if(Shopify.Checkout.step == 'thank_you'){
         // Please add your thanks you page code here
