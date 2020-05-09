@@ -156,11 +156,16 @@ var cartShippingOption = function (){
         }
       });
 }
-window.addEventListener("load", function() {
-    console.log('window loaded')
-    cartShippingOption();
+ cartShippingOption();
     if(Shopify.Checkout.step == 'thank_you'){
         // Please add your thanks you page code here
         console.log("I am on thank you page")
     }
-  }, false);
+// window.addEventListener("load", function() {
+//     console.log('window loaded')
+//     cartShippingOption();
+//     if(Shopify.Checkout.step == 'thank_you'){
+//         // Please add your thanks you page code here
+//         console.log("I am on thank you page")
+//     }
+//   }, false);
