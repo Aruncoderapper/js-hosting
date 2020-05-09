@@ -1,4 +1,4 @@
-console.log("script start");
+console.log("script I am working start");
 function cartShippingOption(){
 
   var values = ["Same day", "Next day", "Standard delivery"];
@@ -30,7 +30,7 @@ window.addEventListener("load", cartShippingOption, false);
 
 //window.onload =  cartShippingOption;
 
-  console.log("script end");
+  console.log("script I am working  end");
 
 // console.log("script start");
 // window.onload = function() {
