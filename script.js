@@ -29,9 +29,9 @@ var cartShippingOption = function (){
     var storePickup = `
     <p class="cart-attribute__field">
     <label>Store Name</label><br>
-    <input type="radio" name="attributes[Store Name]" value="Store Name 1"{% if cart.attributes["Store Name"] == "Store Name 1" %} checked{% endif %}> <span>Store Name 1</span><br>
-    <input type="radio" name="attributes[Store Name]" value="Store Name 2"{% if cart.attributes["Store Name"] == "Store Name 2" %} checked{% endif %}> <span>Store Name 2</span><br>
-    <input type="radio" name="attributes[Store Name]" value="Store Name 3"{% if cart.attributes["Store Name"] == "Store Name 3" %} checked{% endif %}> <span>Store Name 3</span><br>
+    <input type="radio" name="attributes[Store Name]" value="NY1010" {% if cart.attributes["Store Name"] == "NY1010" %} checked{% endif %}> <span>West 143rd Street, NY city</span><br>
+    <input type="radio" name="attributes[Store Name]" value="TO1010" {% if cart.attributes["Store Name"] == "TO1010" %} checked{% endif %}> <span>290 Bremner Blvd, Toronto</span><br>
+    <input type="radio" name="attributes[Store Name]" value="LA2020"{% if cart.attributes["Store Name"] == "LA2020" %} checked{% endif %}> <span>200 Santa Monica Pier, Santa Monica, CA</span><br>
    </p>
     <p class="cart-attribute__field">
     <label for="choose-pickup-date">Choose Pickup Date</label>
@@ -39,7 +39,7 @@ var cartShippingOption = function (){
     </p>
     <p class="cart-attribute__field">
     <label for="choose-pickup-time">Choose Pickup Time</label>
-    <input id="choose-pickup-time" type="time" min="09:00" max="18:00"  name="attributes[Choose Pickup Time]" value=""> <small>Office hours are 9am to 6pm</small>
+    <input id="choose-pickup-time" type="time" min="09:00" max="18:00"  name="attributes[Choose Pickup Time]" value=""> <small>Store hours are 9am to 6pm</small>
     </p
     <p class="cart-attribute__field">
     <label for="store-pick-note">Store Pick Note</label>
